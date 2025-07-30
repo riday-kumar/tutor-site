@@ -1,0 +1,10 @@
+.bg-header {
+  background-color: rgba(219, 66, 76, 0.55);
+}
+
+/* navbar  */
+nav ul li a {
+  font-size: 1.2rem;
+  line-height: 24px;
+  font-weight: 500;
+}
