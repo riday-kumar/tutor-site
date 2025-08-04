@@ -17,46 +17,42 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- header -->
     <header
-      class="paragraph-font bg-header bg-[url('./images/2-bg.jpg')] bg-cover bg-blend-darken"
+      class="paragraph-font bg-header bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-blend-darken"
     >
-      <!-- nav bar -->
-      <nav class="flex justify-between items-center w-7xl mx-auto py-5">
-        <div>
-          <img class="h-[70px]" src="./images/logo-1.png" alt="" />
-        </div>
-        <div class="flex items-center gap-15">
-          <ul class="flex justify-between gap-15">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Class</a></li>
+      <nav class="flex items-center justify-between px-12 h-16">
+        <!-- logo -->
+        <img class="h-12" src="./images/logo-1.png" alt="" />
+
+        <!-- menu -->
+        <div
+          class="drop-downs absolute -top-full left-0 max-lg:bg-[rgba(219,66,76,0.55)] max-lg:bg-[url('./images/2-bg.jpg')] max-lg:bg-blend-darken w-full flex flex-col items-center gap-6 py-3 lg:static lg:flex-row lg:justify-end"
+        >
+          <ul
+            class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8 text-white text-[16px] font-bold"
+          >
+            <li><a href="" class="hover:text-sky-400">Home</a></li>
+            <li><a href="" class="hover:text-sky-400">About</a></li>
+            <li><a href="" class="hover:text-sky-400">Class</a></li>
           </ul>
-          <a href="">
-            <button
-              class="bg-amber-300 font-bold rounded-[5px] text-white px-[35px] py-[15px]"
-            >
-              Contact us
-            </button>
-          </a>
+          <div>
+            <a href="" class="btn-primary">Contact us</a>
+          </div>
+        </div>
+        <!-- menu icon for mobile -->
+        <div class="toggle-button lg:hidden text-white">
+          <i class="fa-solid fa-bars fa-lg"></i>
         </div>
       </nav>
       <!-- banner parent -->
-      <div class="flex justify-between items-center w-7xl mx-auto">
-        <!-- banner left side -->
-        <div>
-          <h1
-            class="heading-font font-semibold text-[90px] leading-28 text-white"
-          >
-            <span class="font-extrabold">Smart</span> Learning <br />
-            <span class="font-extrabold">Study</span> Easily
-          </h1>
-        </div>
-        <!-- banner right side -->
-        <div>
-          <img class="h-[700px]" src="./images/person2.png" alt="" />
-        </div>
-      </div>
     </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle-button");
+      const dropdown = document.querySelector(".drop-downs");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("top-16");
+      });
+    </script>
   </body>
 </html>
