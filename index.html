@@ -18,40 +18,39 @@
   </head>
   <body>
     <header
-      class="paragraph-font bg-header bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-blend-darken"
+      class="bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-header bg-blend-darken max-lg:px-5 py-3"
     >
-      <nav class="flex items-center justify-between px-12 h-16">
+      <nav
+        class="flex justify-between items-center lg:w-5xl lg:m-auto xl:w-6xl"
+      >
         <!-- logo -->
-        <img class="h-12" src="./images/logo-1.png" alt="" />
-
+        <img class="h-15" src="./images/logo-1.png" alt="" />
         <!-- menu -->
         <div
-          class="drop-downs absolute -top-full left-0 max-lg:bg-[rgba(219,66,76,0.55)] max-lg:bg-[url('./images/2-bg.jpg')] max-lg:bg-blend-darken w-full flex flex-col items-center gap-6 py-3 lg:static lg:flex-row lg:justify-end"
+          class="drop-downs absolute -top-full left-0 max-lg:bg-[url('./images/2-bg.jpg')] max-lg:bg-[rgba(219,66,76,0.55)] max-lg:bg-cover max-lg:bg-center max-lg:bg-blend-darken w-full flex flex-col items-center gap-6 py-5 lg:flex-row lg:static lg:justify-end"
         >
           <ul
-            class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8 text-white text-[16px] font-bold"
+            class="flex flex-col gap-4 text-white text-[20px] font-bold lg:flex-row"
           >
-            <li><a href="" class="hover:text-sky-400">Home</a></li>
-            <li><a href="" class="hover:text-sky-400">About</a></li>
-            <li><a href="" class="hover:text-sky-400">Class</a></li>
+            <li><a href="" class="hover:text-sky-300">Home</a></li>
+            <li><a href="" class="hover:text-sky-300">About</a></li>
+            <li><a href="" class="hover:text-sky-300">Class</a></li>
           </ul>
-          <div>
-            <a href="" class="btn-primary">Contact us</a>
-          </div>
+          <a href="" class="btn-primary">Contact</a>
         </div>
-        <!-- menu icon for mobile -->
+        <!-- mobile menu icon -->
         <div class="toggle-button lg:hidden text-white">
           <i class="fa-solid fa-bars fa-lg"></i>
         </div>
       </nav>
-      <!-- banner parent -->
     </header>
+
     <script>
       const toggleBtn = document.querySelector(".toggle-button");
       const dropdown = document.querySelector(".drop-downs");
 
       toggleBtn.addEventListener("click", () => {
-        dropdown.classList.toggle("top-16");
+        dropdown.classList.toggle("top-20");
       });
     </script>
   </body>
