@@ -10,6 +10,15 @@
     rgba(230, 242, 242, 1) 50%
   );
 }
+
+.bg-sec-over {
+  background-color: #fff8e0;
+}
+
+.pg-color {
+  color: rgb(142, 142, 142);
+}
+
 .btn-primary {
   display: inline-block;
   padding: 15px 30px;
