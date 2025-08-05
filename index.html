@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SMC Tutor</title>
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome cdn -->
@@ -18,7 +18,7 @@
   </head>
   <body>
     <header
-      class="bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-header bg-blend-darken max-lg:px-5 py-3"
+      class="bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-header bg-blend-darken max-lg:px-5 pt-3"
     >
       <nav
         class="flex justify-between items-center lg:w-5xl lg:m-auto xl:w-6xl"
@@ -27,7 +27,7 @@
         <img class="h-15" src="./images/logo-1.png" alt="" />
         <!-- menu -->
         <div
-          class="drop-downs absolute -top-full left-0 max-lg:bg-[url('./images/2-bg.jpg')] max-lg:bg-[rgba(219,66,76,0.55)] max-lg:bg-cover max-lg:bg-center max-lg:bg-blend-darken w-full flex flex-col items-center gap-6 py-5 lg:flex-row lg:static lg:justify-end"
+          class="drop-downs absolute -top-full left-0 max-lg:bg-amber-200 w-full flex flex-col items-center gap-6 py-5 lg:flex-row lg:static lg:justify-end"
         >
           <ul
             class="flex flex-col gap-4 text-white text-[20px] font-bold lg:flex-row"
@@ -43,8 +43,33 @@
           <i class="fa-solid fa-bars fa-lg"></i>
         </div>
       </nav>
+      <!-- banner -->
+      <div
+        class="flex flex-col md:flex-row md:items-center md:pt-8 lg:pt-14 lg:w-5xl lg:m-auto xl:w-6xl"
+      >
+        <!-- left side -->
+        <div class="text-white text-center md:text-left max-md:py-20">
+          <h1
+            class="heading-font font-semibold text-[56px] leading-14 md:text-[64px] md:leading-16 lg:text-[88px] lg:leading-[88px]"
+          >
+            <span class="font-extrabold">Smart</span> Learning <br />
+            <span class="font-extrabold">Study</span> Easily
+          </h1>
+          <p class="w-full md:w-[70%] lg:w-[80%] text-[18px] my-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a href="" class="btn-primary join-btn">Join Now</a>
+        </div>
+        <!-- right side -->
+        <div class="m-auto md:m-0">
+          <img class="" src="./images/person2.png" alt="" />
+        </div>
+      </div>
     </header>
-
+    <main>
+      <section class="mt-52"></section>
+    </main>
     <script>
       const toggleBtn = document.querySelector(".toggle-button");
       const dropdown = document.querySelector(".drop-downs");
