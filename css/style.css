@@ -1,6 +1,15 @@
 .bg-header {
   background-color: rgba(219, 66, 76, 0.55);
 }
+
+.bg-ourcourse {
+  background: #ffffff;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(230, 242, 242, 1) 50%
+  );
+}
 .btn-primary {
   display: inline-block;
   padding: 15px 30px;
