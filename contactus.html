@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMC Tutor</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/55cffc8ff5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind config file -->
+    <link rel="stylesheet" href="./css/tailwind.config.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header
+      class="bg-[url('./images/2-bg.jpg')] bg-cover bg-center bg-header bg-blend-darken max-lg:px-5 pt-8"
+    >
+      <nav
+        class="flex justify-between items-center lg:w-5xl lg:m-auto xl:w-6xl"
+      >
+        <!-- logo -->
+        <img class="h-15" src="./images/logo-1.png" alt="" />
+        <!-- menu -->
+        <div
+          class="drop-downs absolute -top-full left-0 max-lg:bg-amber-200 w-full flex flex-col items-center gap-6 py-5 lg:flex-row lg:static lg:justify-end"
+        >
+          <ul
+            class="flex flex-col gap-4 text-white text-[20px] font-bold lg:flex-row"
+          >
+            <li><a href="./index.html" class="hover:text-sky-300">Home</a></li>
+            <li><a href="" class="hover:text-sky-300">About</a></li>
+            <li><a href="" class="hover:text-sky-300">Class</a></li>
+          </ul>
+          <a href="./contactus.html" class="btn-primary">Contact</a>
+        </div>
+        <!-- mobile menu icon -->
+        <div class="toggle-button lg:hidden text-white">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="py-20 lg:py-32 lg:w-5xl lg:m-auto xl:w-6xl">
+        <div class="flex justify-center items-center text-center relative">
+          <img
+            class="h-20 md:h-24 absolute left-0 top-20 md:left-20 md:-top-10 lg:left-60 lg:-top-16"
+            src="./images/c4.png"
+            alt=""
+          />
+          <h2
+            class="heading-font font-extrabold text-[56px] lg:text-7xl text-white"
+          >
+            Contact Us
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main class="paragraph-font">
+      <!-- contact us section -->
+      <section class="bg-[#e6f2f2] py-20 lg:py-40">
+        <!-- contact parent -->
+        <div
+          class="grid grid-cols-1 max-lg:gap-14 justify-items-center lg:grid-cols-3 lg:gap-5 text-[#54595F] max-lg:px-5 lg:w-5xl lg:m-auto xl:w-6xl"
+        >
+          <!-- number -->
+          <div
+            class="flex max-lg:flex-col max-lg:text-center gap-5 items-center"
+          >
+            <i
+              class="p-5 rounded-[50%] text-2xl bg-cyan-300 text-white fa-solid fa-phone"
+            ></i>
+            <div class="text-[#54595f]">
+              <p class="text-[18px] mb-1">Our Number</p>
+              <p class="heading-font text-[26px] font-extrabold">
+                +6282 4032 567
+              </p>
+            </div>
+          </div>
+          <!-- email address -->
+          <div
+            class="flex max-lg:flex-col max-lg:text-center gap-5 items-center"
+          >
+            <i
+              class="p-5 rounded-[50%] text-2xl bg-[#fcbf4b] text-white fa-solid fa-envelope"
+            ></i>
+            <div class="text-[#54595f]">
+              <p class="text-[18px] mb-1">Email Address</p>
+              <p class="heading-font text-[26px] font-extrabold">
+                example@email.com
+              </p>
+            </div>
+          </div>
+          <!-- our location -->
+          <div
+            class="flex max-lg:flex-col max-lg:text-center gap-5 items-center"
+          >
+            <i
+              class="p-5 rounded-[50%] text-2xl bg-[#ec5f5f] text-white fa-solid fa-location-dot"
+            ></i>
+            <div class="text-[#54595f]">
+              <p class="text-[18px] mb-1">Our location</p>
+              <p class="heading-font text-[26px] font-extrabold">
+                2443 Oak Ridge Omaha, QA 45065
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- join Us section -->
+      <section class="bg-[#0dd6d6] max-md:py-10 md:pt-15">
+        <div
+          class="max-md:text-center text-white flex max-md:flex-col-reverse md:items-center max-lg:px-5 lg:w-5xl lg:m-auto xl:w-6xl"
+        >
+          <!-- left side -->
+          <div class="max-md:flex-1/2">
+            <h3
+              class="heading-font md:w-[60%] text-[37px] max-md:mt-5 lg:text-5xl font-extrabold lg:leading-16"
+            >
+              Join Our Education center Now
+            </h3>
+            <p class="w-[80%] md:w-full lg:w-[80%] max-lg:mx-auto mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              dolorem ad nobis aperiam delectus. Deserunt optio fugiat aliquid
+              minima natus!
+            </p>
+            <a href="" class="mt-5 btn-primary join-btn cnt-btn">Join Now</a>
+          </div>
+          <!-- right side image -->
+          <div class="max-md:flex-1/2">
+            <img class="max-md:m-auto" src="./images/stu-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#484848] pt-20 pb-10">
+      <div
+        class="grid max-md:grid-cols-1 max-md:gap-10 max-md:justify-items-center md:grid-cols-3 md:items-center text-white max-lg:px-5 lg:w-5xl lg:m-auto xl:w-6xl"
+      >
+        <!-- part one -->
+        <div class="text-center">
+          <img class="h-20 m-auto" src="./images/logo-1.png" alt="" />
+          <p class="pg-color mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nam!
+          </p>
+        </div>
+        <!-- part two -->
+        <div class="text-center">
+          <h2 class="heading-font font-extrabold text-2xl">Explore</h2>
+          <ul class="text-center pg-color mt-3">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Class</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- part three -->
+        <div class="text-center">
+          <h2 class="heading-font font-extrabold text-2xl">Get In Touch</h2>
+          <ul class="text-center mt-3 pg-color">
+            <li>
+              <a href=""
+                ><i class="text-[#e48188] fa-solid fa-location-dot"></i> 2443
+                Oak Ridge Omaha, QA 45065
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="text-[#e48188] fa-solid fa-phone"></i> 207-8767-452
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-white mt-20">
+        <p>
+          Copyright © 2025 Lessan | Designed By
+          <a class="font-bold" href="">Hridoy Saha</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".toggle-button");
+      const dropdown = document.querySelector(".drop-downs");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("top-20");
+      });
+    </script>
+  </body>
+</html>
